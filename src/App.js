@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
 function App() {
+  const gridSize = 32; // You can adjust the grid size here
+  const totalSquares = gridSize * gridSize;
+
+  const renderMiniSquares = () => {
+    const miniSquares = [];
+    for (let i = 0; i < totalSquares; i++) {
+      miniSquares.push(<div className="mini-square" key={i}></div>);
+    }
+    return miniSquares;
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="grid">
+        {renderMiniSquares()}
+      </div>
     </div>
   );
 }
