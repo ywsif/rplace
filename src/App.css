@@ -1,18 +1,45 @@
 .App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.canvas {
+  padding: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  flex-wrap: wrap;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(32, 10px); /* Adjust the number of columns and size as needed */
-  grid-gap: 1px; /* Adjust gap between mini squares */
+.row {
+  display: flex;
 }
 
-.mini-square {
-  width: 10px; /* Adjust size of mini square */
-  height: 10px; /* Adjust size of mini square */
-  background-color: #ccc; /* Adjust background color of mini square */
+.cell {
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+}
+
+.palette-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px 5px 0;
+  cursor: pointer;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth effect */
+  transition: transform 0.3s ease;
+}
+
+.color:hover {
+  transform: scale(1.5);
 }
