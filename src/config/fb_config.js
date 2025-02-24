@@ -10,13 +10,13 @@ const firebaseApp = initializeApp({
   // storageBucket: process.env.REACT_APP_STORAGEBUCKET,
   // messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
   // appId: process.env.REACT_APP_APPID,
-  apiKey: "AIzaSyAd4Lg3WbBTTFztUeoHAm5V9XN6uEQuf7o",
-  authDomain: "rplace-23019.firebaseapp.com",
-  projectId: "rplace-23019",
-  storageBucket: "rplace-23019.appspot.com",
-  messagingSenderId: "794556227083",
-  appId: "1:794556227083:web:e60776eae1311875f6f10e",
-  measurementId: "G-VP9E92FYJV"
+  apiKey: "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  authDomain: "XXXXXXXXXX-XXXXXXXXXXXXX.firebaseapp.com",
+  projectId: "XXXXXXX-XXXXXXXX",
+  storageBucket: "XXXXXXXXX-XXXXXXXX.appspot.com",
+  messagingSenderId: "XXXXXXXXXXXXXXX",
+  appId: "X:XXXXXXXXXXXXXXX:web:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  measurementId: "G-XXXXXXXXXXXXXXXXXXXXXXXXX"
 
 });
 
